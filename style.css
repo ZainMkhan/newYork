@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 1%;
+}
+
+.nav-container ul{
+    position: relative;
+    right: 10%;
+    display: flex;
+    background-color: #01ddf9;
+    border-radius: 1em;
+    
+}
+
+.nav-container ul li{
+    list-style-type: none;
+    padding: 2em;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+@media (max-width: 490px) {
+    .nav-container ul {
+      flex-wrap: wrap;
+    left: 1%;
+    }
+  
+    .nav-container ul li {
+      padding: 1em;
+    }
+  }
+  
+  /*Main Body*/
+
+
+  .home-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 98%;
+    margin: 1%;
+  }
+
+  .main-heading{
+    padding: 4%;
+  }
+  .landing-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .landing-img{
+    width: 50%;
+    background-color: blue;
+  }
+
+  .landing-para{
+    width: 50%;
+    
+    padding: 6.1%;
+    border-left: 2px solid black;
+  }
+
+  /*Cards Section*/
+
+  .about-page{
+    width: 98%;
+    margin: 1%;
+  }
+  .cards-holder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cards{
+    width: 25%;
+  }
+  .cards img{
+   width: 90%;
+   border-radius: 1em;
+   margin-bottom: 3%;
+  }
+
+.about-tips{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.placesCard{
+    margin-top: 4%;
+}
+
+.thingsToKnow{
+    display: flex;
+    justify-content: space-between;
+    line-height:2em;
+}
+.places-img{
+    width: 30%;
+    border-radius: 1em;
+    margin:1em;
+}
+
+.gap{
+    margin-bottom: 2%;
+}
+
+.foot-container{
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 98%;
+    margin: 1%;
+    background-size: cover;
+    background-image: url("./img/footer.jpg");
+}
+
+.btn{
+    padding: 2%;
+    border-radius: 1em;
+    margin:2%;
+}
+
+@media  (max-width : 850px){
+    .landing-page{
+        display: block;
+    }
+    .landing-img ,.landing-para{
+        width: 100%;
+    }
+    .thingsToKnow{
+     flex-wrap: wrap;
+    }
+    .places-img{
+        width: 100%;
+    }
+}
